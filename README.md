@@ -7,3 +7,12 @@ When put as the intermediary between LaunchBox and PCSX2, this script will find 
 
 # Usage
 This PS script has been converted into a .exe for usage. You can use the .exe provided here, but if you don't trust me (and why would you?) then I have included "ps12exe.ps1", which is a tool to convert PS scripts to .exe files. Using this, you can reveiw the LB2PCSX2.ps1 code, and compile your own .exe file.
+
+Once you have the .exe file ready, all thats left to do is set up the command-line arguments to link everything together. This script needs the following as arguments in the "Default command line parameters" box in the "Edit Emulator" options on LaunchBox:
+
+1. Path to folder where files are being extracted. (Usually Path/To/LaunchBox/7-Zip/Temp)
+2. Path to the PCSX2 exe
+3. Emulator arguments in triple-quotes (if multiple arguments, surround by another pair of quotes. (For example """--no-gui""", or """"--no-gui""" """--fullscreen""""
+
+An example setup:
+![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
