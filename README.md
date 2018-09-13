@@ -10,9 +10,9 @@ This **PowerShell** script has been converted into a `.exe` for usage. You can u
 
 Once you have the `.exe` file ready, all thats left to do is set up the command-line arguments in the "Edit Emulator" options in LaunchBox, which will link everything together  Firstly, select the new `.exe` you compiled (or downloaded, thanks for trusting me!) as the **"Emulator Application Path"**. Then, this script needs the following as arguments in the **"Default Command-Line Parameters"** section:
 
-1. Path to folder where files are being extracted. (Usually Path/To/LaunchBox/7-Zip/Temp)
-2. Path to the PCSX2 exe
-3. Emulator arguments in triple-quotes. If you have multiple emulator arguments to pass, you need to surround these in *ANOTHER* pair of quotes. For example, for a single argument: `"""--no-gui"""` and for a double argument: `""""--no-gui""" """--fullscreen""""`
+1. Path to folder where files are being extracted. (Usually `X:/Your/Path/To/LaunchBox/7-Zip/Temp`)
+2. Path to the PCSX2 `.exe`. (`X:/Your/Path/To/PCSX2/pcsx2.exe`)
+3. Emulator arguments in **triple-quotes**. If you have multiple emulator arguments to pass, you need to surround these in *ANOTHER* pair of quotes. For example, for a single argument: `"""--no-gui"""` and for a double argument: `""""--no-gui""" """--fullscreen""""`
 
 # An Example Setup:
 ![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
