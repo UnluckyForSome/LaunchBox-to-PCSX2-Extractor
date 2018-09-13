@@ -19,5 +19,5 @@ Once you have the `.exe` file ready, all that’s left to do is set up the comma
 
 **Default Command-Line Parameters:** `"C:\Users\Joe\LaunchBox\7-Zip\Temp" "C:\Program Files (x86)\PCSX2\pcsx2.exe" """"--nogui""" """--fullscreen""""`
 
-![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
+![LaunchBox Settings](https://i.imgur.com/pKZDHx2.png)
 
