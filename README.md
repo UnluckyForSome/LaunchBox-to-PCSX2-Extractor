@@ -1,3 +1,5 @@
+This script is designed specifically for **LaunchBox**. For similar functionality (extracting compressed files temporarily before passing onto an emulator) using a different front-end and even different game types, try my [7zEmuPrepper](https://github.com/UnluckyForSome/7zEmuPrepper).
+
 # LaunchBox-to-PCSX2-Extractor
 Currently the way LaunchBox works, when **"Extract ROM archives before running"** is ticked, the archives are extracted and then LaunchBox tries to run the extracted files with the emulator. Unfortunately, if there are multiple files extracted, LaunchBox will look for and prioritise a `.CUE` file, which PCSX2 does not support. This will result in PCSX2 not functioning.
 
@@ -6,7 +8,7 @@ I compress all of my PlayStation 2 games (I have a full set so must do this to f
 When put as the intermediary between **LaunchBox** and **PCSX2**, this script will find the **PCSX2-friendly** file which needs to be forwarded to the emulator, by first looking for a `.ISO`, and then if not found, looking for a `.BIN`
 
 # Usage:
-This **PowerShell** script has been converted into a `.exe` for usage. You can use the `.exe` provided here (**LB2PCSX2.exe**), but if you don't trust me (and why would you?) then I have also included **"PS2EXE.ps1"**, which is the tool I used that converts **PowerShell** scripts to `.exe` files. Using this, you can review the **LB2PCSX2.ps1** code, and compile your own `.exe` file. If you open up a PowerShell window, navigate to the directory **"PS2EXE.ps1"** and **LB2PCSX2** are both in, and type `./ps2exe.ps1 ./LB2PCSX2.ps1 ./LB2PCSX2.exe -noconfig` then your own `.exe` file will be compiled. See the [Microsoft PS2EXE Download Page](https://gallery.technet.microsoft.com/scriptcenter/PS2EXE-GUI-Convert-e7cb69d5) for more information on how to use this (it's super easy).
+This **PowerShell** script has been converted into a `.exe` for usage. You can use the `.exe` provided here, but if you don't trust me (and why would you?) then I have also included **"PS2EXE.ps1"**, which is the tool I used that converts **PowerShell** scripts to `.exe` files. Using this, you can review the **LB2PCSX2.ps1** code, and compile your own `.exe` file. See the [Microsoft PS2EXE Download Page](https://gallery.technet.microsoft.com/scriptcenter/PS2EXE-GUI-Convert-e7cb69d5) for more information on how to use this (it's super easy).
 
 Once you have the `.exe` file ready, all that’s left to do is set up the command-line arguments in the "Edit Emulator" options in LaunchBox, which will link everything together. Firstly, select the new `.exe` you compiled (or downloaded, thanks for trusting me!) as the **"Emulator Application Path"**. Then, this script needs the following as arguments in the **"Default Command-Line Parameters"** section:
 
@@ -19,5 +21,4 @@ Once you have the `.exe` file ready, all that’s left to do is set up the comma
 
 **Default Command-Line Parameters:** `"C:\Users\Joe\LaunchBox\7-Zip\Temp" "C:\Program Files (x86)\PCSX2\pcsx2.exe" """"--nogui""" """--fullscreen""""`
 
-![LaunchBox Settings](https://i.imgur.com/pKZDHx2.png)
-
+![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
