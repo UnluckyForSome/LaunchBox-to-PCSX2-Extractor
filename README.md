@@ -16,6 +16,8 @@ Once you have the `.exe` file ready, all that’s left to do is set up the comma
 2. Path to the PCSX2 `.exe`. (`X:/Your/Path/To/PCSX2/pcsx2.exe`)
 3. Emulator arguments in **triple-quotes**. If you have multiple emulator arguments to pass, you need to surround these in *ANOTHER* pair of quotes. For example, for a single argument: `"""--no-gui"""` and for a double argument: `""""--no-gui""" """--fullscreen""""`
 
+Lastly, remove anything in LaunchBox's "AutoHotkey Script", as this can cause files to be left behind when exiting PCSX2.
+
 # An Example Setup:
 **Emulator Application Path:** `..\..\..\Program Files (x86)\PCSX2\PCSX2Prepper.exe`
 
