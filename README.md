@@ -18,4 +18,5 @@ Once you have the `.exe` file ready, all thats left to do is set up the command-
 ![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
 
 **Emulator Application Path:** `..\..\..\Program Files (x86)\PCSX2\PCSX2Prepper.exe`
+
 **Default Command-Line Parameters:** `"C:\Users\Joe\LaunchBox\7-Zip\Temp" "C:\Program Files (x86)\PCSX2\pcsx2.exe" """"--nogui""" """--fullscreen""""`
