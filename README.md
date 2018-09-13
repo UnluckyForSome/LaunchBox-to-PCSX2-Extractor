@@ -6,9 +6,9 @@ I compress all of my Playstation 2 games (I have a full set so must do this to f
 When put as the intermediary between **LaunchBox** and **PCSX2**, this script will find the **PCSX2-friendly** file which needs to be forwarded to the emulator, by first looking for a `.ISO`, and then if not found, looking for a `.BIN`
 
 # Usage
-This PowerShell script has been converted into a `.exe` for usage. You can use the `.exe` provided here, but if you don't trust me (and why would you?) then I have also included [**"PS2EXE.ps1"**](https://gallery.technet.microsoft.com/scriptcenter/PS2EXE-GUI-Convert-e7cb69d5). (don't get confused, this one has nothing to do with the Playstation 2, it's just an unfortunate cooincidence!), which is a tool to convert PS scripts to .exe files. Using this, you can reveiw the **LB2PCSX2.ps1** code, and compile your own .exe file.
+This **PowerShell** script has been converted into a `.exe` for usage. You can use the `.exe` provided here, but if you don't trust me (and why would you?) then I have also included **"PS2EXE.ps1"**, which is the tool I used that converts **PowerShell** scripts to `.exe` files. Using this, you can reveiw the **LB2PCSX2.ps1** code, and compile your own `.exe` file. See the [Microsoft PS2EXE Download Page](https://gallery.technet.microsoft.com/scriptcenter/PS2EXE-GUI-Convert-e7cb69d5) for more information on how to use this (it's super easy).
 
-Once you have the .exe file ready, all thats left to do is set up the command-line arguments to link everything together in the "Edit Emulator" options in LaunchBox. Firstly, select the new .exe you compiled (or downloaded) as the "Emulator Application Path". Then, this script needs the following as arguments in the "Default Command-Line Parameters" section:
+Once you have the `.exe` file ready, all thats left to do is set up the command-line arguments in the "Edit Emulator" options in LaunchBox, which will link everything together  Firstly, select the new `.exe` you compiled (or downloaded, thanks for trusting me!) as the **"Emulator Application Path"**. Then, this script needs the following as arguments in the **"Default Command-Line Parameters"** section:
 
 1. Path to folder where files are being extracted. (Usually Path/To/LaunchBox/7-Zip/Temp)
 2. Path to the PCSX2 exe
