@@ -15,8 +15,9 @@ Once you have the `.exe` file ready, all that’s left to do is set up the comma
 3. Emulator arguments in **triple-quotes**. If you have multiple emulator arguments to pass, you need to surround these in *ANOTHER* pair of quotes. For example, for a single argument: `"""--no-gui"""` and for a double argument: `""""--no-gui""" """--fullscreen""""`
 
 # An Example Setup:
-![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
-
 **Emulator Application Path:** `..\..\..\Program Files (x86)\PCSX2\PCSX2Prepper.exe`
 
 **Default Command-Line Parameters:** `"C:\Users\Joe\LaunchBox\7-Zip\Temp" "C:\Program Files (x86)\PCSX2\pcsx2.exe" """"--nogui""" """--fullscreen""""`
+
+![LaunchBox Settings](https://i.imgur.com/eNyA6S6.png)
+
